@@ -1,0 +1,13 @@
+body { 
+    background-color: #1E2425;
+    ;
+    font-family: Helvetica, Source Code Pro, sans-serif;
+    font-weight: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+h2 logo-brand {
+    /* font-family: ; */
+    font-size: 24px;
+}
