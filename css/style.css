@@ -7,7 +7,39 @@ body {
     margin: 0;
 }
 
-h2 logo-brand {
-    /* font-family: ; */
+.nav-area {
+    position: absolute;
+    width: 1366px;
+    height: 98px;
+    padding: 0;
+    margin: 0;
+
+    /* Rectangle */
+    background: linear-gradient(259.5deg, rgba(44, 46, 77, 0.88) 49.1%, rgba(32, 37, 106, 0.94) 66.84%);
+    box-shadow: -4px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-items{
+    text-align: end;
+    color: #CFCFCF;
+    
+}
+.nav-items ul li{
+    display: inline-block;
+    position: static;
+    width: 116px;
+    height: 31px;
+    left: 720px;
+    top: 34px;
+    padding-top: 1.2rem;
+    padding-right: 3.9rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: bold;
     font-size: 24px;
+    line-height: 31px;
+    text-decoration-line: none;
 }
