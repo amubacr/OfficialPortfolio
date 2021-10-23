@@ -1,6 +1,5 @@
 body { 
     background-color: #1E2425;
-    ;
     font-family: Helvetica, Source Code Pro, sans-serif;
     font-weight: 1.5;
     padding: 0;
@@ -10,7 +9,7 @@ body {
 .nav-area {
     position: absolute;
     width: 1366px;
-    height: 98px;
+    height: 90px;
     padding: 0;
     margin: 0;
 
@@ -25,21 +24,26 @@ body {
     
 }
 .nav-items ul li{
+    position: -ms-page;
     display: inline-block;
-    position: static;
     width: 116px;
     height: 31px;
     left: 720px;
     top: 34px;
-    padding-top: 1.2rem;
-    padding-right: 3.9rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    padding-top: 0.9rem;
+    padding-right: 3rem;
+    margin-right: 5px;
+    margin-left: 6px;
 
     font-family: Fira Code;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 31px;
+    font
+    line-height: 30px;
+}
+
+.nav-items ul li a {
     text-decoration-line: none;
+    color: #CFCFCF;
 }
