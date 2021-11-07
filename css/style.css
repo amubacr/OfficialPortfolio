@@ -125,7 +125,7 @@ body {
 
 /* ! End of Header: Navigation-area */
 
-/* Responsive Breakpoints Area */
+/* Responsive Design Breakpoints Area */
 
 /* Ukuran Laptop 14Inch */
 @media screen and (max-width: 1450px) {
@@ -142,33 +142,58 @@ body {
 }
 
 /* Ukuran Tablet atau Ipad */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .narea-nav {
+    display: flex;
     width: 50%;
+    justify-content: space-evenly;
+  }
+
+  .narea .narea-nav .nav-item .nav-link {
+    font: 16px/25px "Droid Sans", sans-serif;
+    letter-spacing: 2px;
+    /* margin: 0 8px; */
+    text-decoration: none;
+    color: #cfcfcf;
+    transition: 0.5s;
+  }
+
+  .narea-toggle span {
+    width: 30px;
+    height: 2px;
+  }
+
+  .narea .narea-nav .nav-item .nav-link:hover {
+    color: #fff;
+    font-size: 18px;
   }
 }
 
-/* Ukuran Handphone atau SmartPhone: min width 410px */
+/* Ukuran Handphone atau SmartPhone */
 @media screen and (max-width: 574px) {
   .narea-toggle {
-    position: relative;
+    position: fixed;
     display: flex;
-    right: -5px;
+    left: 1.5rem;
+    right: 0;
     order: 1;
   }
 
   .brand {
     position: relative;
-    right: 1.5rem;
+    right: 0;
+    font-size: 20px;
+    /* margin-right: 1px; */
     order: 2;
   }
 
   .narea-nav {
-    position: absolute;
-    right: 17.3rem;
+    position: fixed;
+    right: 0;
+    left: 0.5rem;
     top: 0;
-    width: 35%;
-    height: 30vh;
+    width: 10rem;
+    height: 15rem;
     margin-top: 4rem;
     padding-left: 15px;
     justify-content: space-evenly;
@@ -178,4 +203,81 @@ body {
     background-color: #344a7a93;
     box-shadow: -4px 3px 5px rgba(0, 0, 0, 0.3);
   }
+
+  .narea-toggle span {
+    width: 30px;
+    height: 2px;
+  }
+
+  .narea .narea-nav .nav-item .nav-link {
+    font: 12px/25px "Droid Sans", sans-serif;
+    letter-spacing: 2px;
+    /* margin: 0 8px; */
+    text-decoration: none;
+    color: #cfcfcf;
+    transition: 0.5s;
+  }
+
+  .narea .narea-nav .nav-item .nav-link:hover {
+    color: #fff;
+    font-size: 14px;
+  }
 }
+
+/* Responsive Design: Min width 360px */
+
+@media screen and (max-width: 360px) {
+  .narea-toggle {
+    position: fixed;
+    display: flex;
+    left: 1.5rem;
+    right: 0;
+    order: 1;
+  }
+
+  .brand {
+    position: relative;
+    right: 0;
+    font-size: 20px;
+    /* margin-right: 1px; */
+    order: 2;
+  }
+
+  .narea-nav {
+    position: fixed;
+    right: 0;
+    left: 0.5rem;
+    top: 0;
+    width: 7rem;
+    height: 15rem;
+    margin-top: 4rem;
+    padding-left: 15px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: -1;
+    background-color: #344a7a93;
+    box-shadow: -4px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .narea-toggle span {
+    width: 30px;
+    height: 2px;
+  }
+
+  .narea .narea-nav .nav-item .nav-link {
+    font: 10px/25px "Droid Sans", sans-serif;
+    letter-spacing: 1.7px;
+    /* margin: 0 8px; */
+    text-decoration: none;
+    color: #cfcfcf;
+    transition: 0.5s;
+  }
+
+  .narea .narea-nav .nav-item .nav-link:hover {
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+/* ! */
